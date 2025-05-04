@@ -10,6 +10,9 @@ int left(int i) {
 int right(int i) {
     return 2 * i + 2;
 }
+int parent(int i) {
+    return (i-1)/2;
+}
 
 void maxHeapify(int arr[], int i) {
     int l = left(i), r = right(i), largest = i;
